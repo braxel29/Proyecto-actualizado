@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braxel Games</title>
+    <link rel="stylesheet" href="Estilos.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="logo-container"></div>
+        <img src="imagenes/logo.jpeg" alt="Logo Braxel Games" class="logo">
+        <h1>Braxel Games</h1>
+    </div>
+    <nav>
+        <input type="search" placeholder="Buscar Juegos">
+        <button id="show-games">Ver Juegos</button>
+        <button onclick="location.href='usuarios.html'">Ver Usuarios</button> <!-- Cambiado aquí -->
+    </nav>
+</header>
+
+<main>
+    <div class="container">
+        <div class="gallery" id="gallery">
+            <div class="gallery-item">
+                <img src="imagenes/devil may cry.jpg" alt="Juego 1">
+                <button>Comprar</button>
+            </div>
+            <div class="gallery-item">
+                <img src="imagenes/Alan Wake 2.jpg" alt="Juego 2">
+                <button>Comprar</button>
+            </div>
+            <div class="gallery-item">
+                <img src="imagenes/Dark souls 3.jpg" alt="Juego 3">
+                <button>Comprar</button>
+            </div>
+            <div class="gallery-item">
+                <img src="imagenes/The evil within 2.jpg" alt="Juego 4">
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="nav nav-bottom">
+            <button onclick="prevSlide()">&#8592;</button> 
+            <button onclick="nextSlide()">&#8594;</button> 
+        </div>
+
+        <div class="gallery" id="gallery2">
+            <div class="gallery-item">
+                <img src="imagenes/resident_evil_4_remake.jpg" alt="Juego 5">
+                <button>Comprar</button>
+            </div>
+            <div class="gallery-item">
+                <img src="imagenes/dragon ball xeno.jpeg" alt="Juego 6">
+                <button>Comprar</button>
+            </div>
+            <div class="gallery-item">
+                <img src="imagenes/gta 5 deluxe.jpg" alt="Juego 7">
+                <button>Comprar</button>
+            </div>
+            <div class="gallery-item">
+                <img src="imagenes/Elden ring.jpg" alt="Juego 8">
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="nav nav-bottom">
+            <button onclick="prevSlide2()">&#8592;</button>
+            <button onclick="nextSlide2()">&#8594;</button> 
+        </div>
+    </div>
+</main>
+
+<script src="funcion.js"></script>
+<footer>
+    <p>&copy; 2024 Braxel Games. Todos los derechos reservados.</p>
+    <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+        <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </div>
+</footer>
+</body>
+</html>

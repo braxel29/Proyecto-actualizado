@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav input[type="search"] {
+    padding: 5px;
+    font-size: 16px;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    overflow-x: scroll; 
+}
+
+.gallery-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100px;
+    height: 100px;
+}
+
+.gallery-item button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -20px; 
+}
+
+.nav-top {
+    margin-bottom: -20px; 
+}
+
+.nav-bottom {
+    margin-top: -40px; 
+}
+
+.nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #333; 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social-links a {
+    color: #007BFF; 
+    text-decoration: none; 
+    margin: 0 10px; 
+}
+
+footer .social-links a:hover {
+    text-decoration: underline; 
+}
+
+
+.header-content {
+    display: flex;
+    align-items: center; 
+}
+
+
+.logo-container {
+    display: flex; 
+    align-items: center; 
+    margin-right: 20px; 
+}
+
+
+.logo {
+    width: 40px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+
+
+.logo-container h1 {
+    margin: 0;
+    font-size: 24px; 
+    color: white;
+}
+
+
+.search-bar {
+    padding: 5px;
+    font-size: 16px;
+}
+#datatable-container {
+    transition: all 0.5s ease;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #302b63;
+    color: white;
+    padding: 10px 20px;
+}
+.logo {
+    width: 50px;
+}
+nav input[type="search"] {
+    padding: 5px;
+}
+nav button {
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.gallery, #datatable-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+table thead {
+    background: #302b63;
+    color: white;
+}
