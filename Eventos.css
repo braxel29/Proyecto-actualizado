@@ -1,0 +1,37 @@
+ .carrito {
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 300px;
+    margin: auto;
+    border: 1px solid #ddd;
+}
+
+.btn-comprar, .btn-agregar, .btn-descuento {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#productos {
+    margin-bottom: 10px;
+}
+
+.total {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.game-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game-container img {
+    width: 150px;
+    height: auto;
+}
