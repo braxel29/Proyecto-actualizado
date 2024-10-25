@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras con Imágenes</title>
+    <link rel="stylesheet" href="EventosPer.css">
+
+</head>
+<body>
+
+<header>
+    <a href="#" class="btn-inicio">Volver a Inicio</a>
+</header>
+
+<div class="carrito">
+    <h2>Carrito de Compras</h2>
+
+
+    <div class="game-container">
+        <img src="https://m.media-amazon.com/images/I/81f2PNCNtaS._AC_UF1000,1000_QL80_.jpg" alt="Juego A">
+        <button class="btn-agregar" id="btnAgregarA">Agregar Juego  ($900)</button>
+    </div>
+
+   
+    <div class="game-container">
+        <img src="https://products.eneba.games/resized-products/hjihR-MCvn1qJKzTEeDvknIptXcjaDoFB5dW4zmQJ3A_350x200_3x-0.jpeg" alt="Juego B">
+        <button class="btn-agregar" id="btnAgregarB">Agregar Juego  ($650)</button>
+    </div>
+
+
+    <div id="productos"></div>
+
+ 
+    <div class="total">
+        Total: $<span id="total">0</span>
+    </div>
+
+   
+    <button class="btn-descuento" id="btnDescuento">Aplicar Descuento 10%</button>
+    <button class="btn-comprar" id="btnComprar">Realizar Compra</button>
+</div>
+<script src="EventosPer.js"></script>
+
+</body>
+</html>
