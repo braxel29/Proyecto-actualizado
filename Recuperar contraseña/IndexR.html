@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braxel Games</title>
+    <link rel="stylesheet" href="Recuperar.css">
+</head>
+<body>
+
+    <div class="login-container" id="login-view">
+        <h2>Iniciar Sesión</h2>
+        <div class="input-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" placeholder="ejemplo@gmail.com">
+            <div id="email-error" class="error"></div>
+        </div>
+        <div class="input-group">
+            <label for="password">Contraseña</label>
+            <div style="position: relative;">
+                <input type="password" id="password" placeholder="Escribe tu Contraseña">
+                <span id="toggle-password" style="position: absolute; right: 10px; top: 10px; cursor: pointer;">👁️</span>
+            </div>
+            <div id="password-error" class="error"></div>
+        </div>
+        <button id="btn-login">Iniciar Sesión</button>
+        <a href="#" class="forgot-password" id="forgot-password-link">¿Olvidaste tu contraseña?</a>
+    </div>
+
+    
+    <div class="login-container" id="recovery-view" style="display: none;">
+        <h2>Recuperar Contraseña</h2>
+        <div class="input-group">
+            <label for="new-password">Nueva Contraseña</label>
+            <input type="password" id="new-password" placeholder="Escribe tu nueva contraseña">
+            <div id="new-password-error" class="error"></div>
+        </div>
+        <div class="input-group">
+            <label for="confirm-password">Confirmar Contraseña</label>
+            <input type="password" id="confirm-password" placeholder="Confirma tu nueva contraseña">
+            <div id="confirm-password-error" class="error"></div>
+        </div>
+        <button id="btn-recover">Actualizar Contraseña</button>
+        <a href="#" id="back-to-login">Volver al inicio de sesión</a>
+    </div>
+
+    <script src="Recuperar.js"></script>
+</body>
+</html>
