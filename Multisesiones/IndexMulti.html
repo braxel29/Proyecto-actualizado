@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braxel Games - Inicio de Sesión</title>
+    <link rel="stylesheet" href="Roles.css">
+</head>
+<body>
+    <!-- Vista de Inicio de Sesión -->
+    <div class="login-container" id="login-view">
+        <h2>Iniciar Sesión</h2>
+        <div class="input-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" placeholder="ejemplo@gmail.com">
+            <div id="email-error" class="error"></div>
+        </div>
+        <div class="input-group">
+            <label for="password">Contraseña</label>
+            <div style="position: relative;">
+                <input type="password" id="password" placeholder="Escribe tu Contraseña">
+                <span id="toggle-password" class="toggle-password">👁️</span>
+            </div>
+            <div id="password-error" class="error"></div>
+        </div>
+        <button id="btn-login">Iniciar Sesión</button>
+        <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+    </div>
+
+    <!-- Vista de Usuario Administrador -->
+    <div class="dashboard-container admin-view" id="admin-view" style="display: none;">
+        <h2>Bienvenido, Administrador</h2>
+        <p>Esta es tu área de gestión. Aquí puedes administrar usuarios y contenido.</p>
+        <button id="logout-admin">Cerrar Sesión</button>
+    </div>
+
+    <!-- Vista de Usuario Estándar -->
+    <div class="dashboard-container user-view" id="user-view" style="display: none;">
+        <h2>Bienvenido, Usuario</h2>
+        <p>Esta es tu área de usuario. Aquí puedes explorar juegos y contenido.</p>
+        <button id="logout-user">Cerrar Sesión</button>
+    </div>
+
+    <script src="ValidarRol.js"></script>
+</body>
+</html>
